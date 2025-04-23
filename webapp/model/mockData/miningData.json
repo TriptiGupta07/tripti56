@@ -1,0 +1,201 @@
+{
+    "miningListSet": [
+        {
+           "Location ID": "001",
+           "Location Description" : "North Ridge",
+           "Mineral Type" : "Iron Ore",
+           "Total Cost" : 50000,
+           "Mining Resource" : "Excavator",
+           "Mineral Report" : "Hematite",
+           "Number of Drills" : 5,
+           "Currency" : "USD",
+           "Image": "/images/IronOre.jpg",
+           "Man Days" : 33,
+           "Probability of positive outcome" : "High"
+
+
+        },
+        {
+          "Location ID": "002",
+          "Location Description" : "South Valley",
+           "Mineral Type" : "Copper",
+           "Total Cost" : 75000,
+           "Mining Resource" : "Bulldozer",
+           "Mineral Report" : "Hematite",
+           "Number of Drills" : 3,
+           "Currency" : "INR",
+           "Image" : "/images/Copper.jpg",
+           "Man Days" : 30,
+           "Probability of positive outcome" : "High"
+        }, 
+        {
+          "Location ID": "003",
+          "Location Description" : "East Cliff",
+           "Mineral Type" : "Gold",
+           "Total Cost" : 120000,
+           "Mining Resource" : "Loader",
+           "Mineral Report" : "Gold Nuggets",
+           "Number of Drills" : 7,
+           "Currency" : "EUR",
+           "Image" : "/images/Gold.jpg",
+           "Man Days" : 20,
+           "Probability of positive outcome" : "High"
+        },
+        {
+          "Location ID": "004",
+          "Location Description" : "West Hill",
+           "Mineral Type" : "Silver",
+           "Total Cost" : 90000,
+           "Mining Resource" : "Crusher",
+           "Mineral Report" : "Argentite",
+           "Number of Drills" : 4,
+           "Currency" : "INR",
+           "Image" : "/images/Silver.jpg",
+           "Man Days" : 34,
+           "Probability of positive outcome" : "Low"
+        },
+        {
+          "Location ID": "005",
+          "Location Description" : "Central Basin",
+           "Mineral Type" : "Coal",
+           "Total Cost" : 300000,
+           "Mining Resource" : "Drill Rig",
+           "Mineral Report" : "Bituminous Coal",
+           "Number of Drills" : 6,
+           "Currency" : "AUD",
+           "Image" : "/images/coal.jpg",
+           "Man Days" : 15,
+           "Probability of positive outcome" : "Low"
+        },
+        {
+          "Location ID": "006",
+          "Location Description" : "Northern Plateau",
+           "Mineral Type" : "Zinc",
+           "Total Cost" : 450000,
+           "Mining Resource" : "Blasting Machine",
+           "Mineral Report" : "Sphalerite",
+           "Number of Drills" : 2,
+           "Currency" : "INR",
+           "Image" : "/images/Zinc.jpg",
+           "Man Days" : 40,
+           "Probability of positive outcome" : "Low"
+        },
+        {
+          "Location ID": "007",
+          "Location Description" : "Southern Ridge",
+           "Mineral Type" : "Lead",
+           "Total Cost" : 600000,
+           "Mining Resource" : "Jackhammer",
+           "Mineral Report" : "Galena",
+           "Number of Drills" : 3,
+           "Currency" : "INR",
+           "Image" : "/images/Lead.jpg",
+           "Man Days" : 17,
+           "Probability of positive outcome" : "High"
+        },
+        {
+          "Location ID": "008",
+          "Location Description" : "Eastern Valley",
+           "Mineral Type" : "Nickel",
+           "Total Cost" : 800000,
+           "Mining Resource" : "Bulldozer",
+           "Mineral Report" : "Pentlandite",
+           "Number of Drills" : 5,
+           "Currency" : "EUR",
+           "Image" : "/images/Nickel.jpg",
+           "Man Days" : 20,
+           "Probability of positive outcome" : "Low"
+        },
+        {
+          "Location ID": "009",
+          "Location Description" : "Western Cliff",
+           "Mineral Type" : "Tin",
+           "Total Cost" : 55000,
+           "Mining Resource" : "Shover",
+           "Mineral Report" : "Cassiterite",
+           "Number of Drills" : 4,
+           "Currency" : "INR",
+           "Image" : "/images/Tin.jpeg",
+           "Man Days" : 55,
+           "Probability of positive outcome" : "Low"
+        },
+        {
+          "Location ID": "010",
+          "Location Description" : "Central Ridge",
+           "Mineral Type" : "Uranium",
+           "Total Cost" : 12000,
+           "Mineral Resource" : "Excavatorr",
+           "Mineral Report" : "Uraninite",
+           "Number of Drills" : 6,
+           "Currency" : "USD",
+           "Image" : "/images/Uranium.jpg",
+           "Man Days" : 35,
+           "Probability of positive outcome" : "High"
+        }
+      ],
+      
+     "contractorList" : [
+        {
+          "contractor_id": 101,
+          "name": "ABC Mining Co.",
+          "contact": "abc@miningco.com",
+          "type_of_mineral": "Uranium"
+        },
+        {
+          "contractor_id": 102,
+          "name": "XYZ Excavation Ltd.",
+          "contact": "xyz@excavation.com",
+          "type_of_mineral": "Iron Ore"
+        },
+        {
+          "contractor_id": 103,
+          "name": "LMN Resources Inc.",
+          "contact": "lmn@resources.com",
+          "type_of_mineral": "Copper"
+        },
+        {
+          "contractor_id": 104,
+          "name": "PQR Mining Solutions",
+          "contact": "pqr@miningsolutions.com",
+          "type_of_mineral": "Gold"
+        },
+        {
+          "contractor_id": 105,
+          "name": "STU Minerals Ltd.",
+          "contact": "stu@minerals.com",
+          "type_of_mineral": "Silver"
+        },
+        {
+          "contractor_id": 106,
+          "name": "VWX Mining Corp.",
+          "contact": "vwx@miningcorp.com",
+          "type_of_mineral": "Coal"
+        },
+        {
+          "contractor_id": 107,
+          "name": "YZA Excavation Services",
+          "contact": "yza@excavationservices.com",
+          "type_of_mineral": "Zinc"
+        },
+        {
+          "contractor_id": 108,
+          "name": "BCD Mining Enterprises",
+          "contact": "bcd@miningenterprises.com",
+          "type_of_mineral": "Lead"
+        },
+        {
+          "contractor_id": 109,
+          "name": "EFG Resources Ltd.",
+          "contact": "efg@resources.com",
+          "type_of_mineral": "Nickel"
+        },
+        {
+          "contractor_id": 110,
+          "name": "HIJ Mining Services",
+          "contact": "hij@miningservices.com",
+          "type_of_mineral": "Tin"
+        }
+      ]      
+
+
+}

@@ -1,0 +1,33 @@
+<mvc:View controllerName="app.tripti56.controller.MiningReport"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <headerContent>
+				<Button icon="sap-icon://sort" press="onSort"/>
+		</headerContent>
+		<subHeader>
+			<OverflowToolbar>
+				<SearchField search="onSearch" liveChange="onSearch"/>
+			</OverflowToolbar>
+		</subHeader>
+		<content>
+			<List items="{MiningModel>/miningListSet}" id="idListCtrl" mode="SingleSelectMaster" selectionChange="onItemSelect">
+				<items>
+					<ObjectListItem icon="{MiningModel>Image}"
+					intro="{MiningModel>Location ID}" title="{MiningModel>Mineral Type}" number="{MiningModel>Total Cost}"
+					numberState="{=${MiningModel>Probability of positive outcome}==='High'?'Success':'Error'}" numberUnit="{MiningModel>Currency}">
+					<attributes>
+						<ObjectAttribute text="{MiningModel>Location Description}"></ObjectAttribute>
+						<ObjectAttribute text="{MiningModel>Number of Drills}" title="Drills"></ObjectAttribute>
+					</attributes>
+						<firstStatus>
+							<ObjectStatus text="{MiningModel>Probability of positive outcome}" state="{=${MiningModel>Probability of positive outcome}==='High'?'Success':'Error'}"
+							></ObjectStatus>
+						</firstStatus></ObjectListItem>
+				</items>
+			</List>
+		</content>
+
+    </Page>
+
+</mvc:View>

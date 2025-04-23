@@ -1,0 +1,128 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "app.tripti56",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.17.3",
+      "toolsId": "d5c69376-0b85-439c-acfc-e7d63815d9c5"
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "miningreport-manage": {
+          "semanticObject": "miningreport",
+          "action": "manage",
+          "title": "{{miningreport-manage.flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.135.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "app.tripti56.i18n.i18n"
+        }
+      },
+      "MiningModel":{
+        "type":"sap.ui.model.json.JSONModel",
+        "uri":"model/mockData/miningData.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "app.tripti56.view",
+        "async": true,
+        "viewPath": "app.tripti56.view"
+      },
+      "routes": [
+        {
+          "name": "RouteMiningReport",
+          "pattern": "",
+          "target": [
+            "TargetMiningReport"
+          ]
+        },
+        {
+          "name" : "RouteDetail",
+          "pattern" : "RouteDetail/{index}",
+          "target" : "TargetDetailView"
+        }
+      ],
+      "targets": {
+        "TargetMiningReport": {
+          "id": "MiningReport",
+          "name": "MiningReport"
+        },
+        "TargetDetailView":{
+          "id" : "idDetail",
+          "name" : "DetailView"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "app.tripti56.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+},
+  "sap.cloud": {
+    "public": true,
+    "service": "apptripti56"
+  }
+}

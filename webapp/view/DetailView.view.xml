@@ -1,0 +1,110 @@
+<mvc:View controllerName="app.tripti56.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form">
+    <Page id="idDetail" title="Detail View" showNavButton="true" navButtonPress="onListView">
+	<ObjectHeader intro="{MiningModel>Location ID}" title="{MiningModel>Mineral Type}">
+       <attributes>
+	   <ObjectAttribute text="{MiningModel>Location Description}" title="Location"></ObjectAttribute>
+	   </attributes>
+	</ObjectHeader>
+     <content>
+	   <Label></Label>
+	      <Image src="{MiningModel>Image}" width="200px" height="200px"></Image>
+			<!-- <f:SimpleForm>
+				<Label text="Location Description" design="Bold"></Label>
+				<Text text="{MiningModel>Location Description}"></Text>
+				
+				<Label text="Mineral Type" design="Bold"></Label>
+				<Text text="{MiningModel>Mineral Type}"></Text>
+                </f:SimpleForm> -->
+			<IconTabBar>
+			<items> 
+			<IconTabFilter icon="sap-icon://information">
+			<VBox>
+			<HBox >
+			<Label text="Location ID :" design="Bold"></Label>
+			<Text text="{MiningModel>Location ID}"></Text>
+			</HBox>
+            <HBox >
+			<Label text="Location Description :" design="Bold"></Label>
+			<Text text="{MiningModel>Location Description}"></Text>
+			</HBox>
+
+			<HBox >
+			<Label text="Mineral Type :" design="Bold"></Label>
+			<Text text="{MiningModel>Mineral Type}"></Text>
+			</HBox>
+
+			<HBox >
+			<Label text="Total Cost:" design="Bold"></Label>
+			<Text text="{MiningModel>Total Cost}"></Text>
+			</HBox>
+
+            <HBox >
+            <Label text="Mining Resource :" design="Bold"></Label>
+			<Text text="{MiningModel>Mining Resource}"></Text>
+            </HBox>
+
+            <HBox >
+            <Label text="Mineral Report :" design="Bold"></Label>
+			<Text text="{MiningModel>Mineral Report}"></Text>
+            </HBox>
+			
+            <HBox>
+            <Label text="Number of Drills :" design="Bold"></Label>
+	        <Text text="{MiningModel>Number of Drills}"></Text>
+            </HBox >
+
+			<HBox>
+            <Label text="Currency :" design="Bold"></Label>
+	        <Text text="{MiningModel>Currency}"></Text>
+            </HBox >
+
+			<HBox>
+            <Label text="Man Days :" design="Bold"></Label>
+	        <Text text="{MiningModel>Man Days}"></Text>
+            </HBox >
+
+			<HBox>
+            <Label text="Probability of positive outcome :" design="Bold"></Label>
+	        <Text text="{MiningModel>Probability of positive outcome}"></Text>
+            </HBox >
+
+            </VBox>
+			</IconTabFilter>
+			<IconTabFilter icon="sap-icon://supplier">
+				<Label text="Name"></Label>
+                <Input id="idInptName" width="200px" liveChange="onFilter"></Input>
+                <Label text="Mineral"></Label>
+                <Input id="idInptMineral" width="200px" liveChange="onFilter"></Input>
+			<Table items="{MiningModel>/contractorList}" id="idMTable" >
+				<columns>
+					<Column>
+						<Text text="Contractor ID"></Text>
+					</Column>
+					<Column>
+						<Text text="Contractor Name"></Text>
+					</Column>					
+					<Column>
+						<Text text="Contact Email" ></Text>
+					</Column>
+					<Column>
+						<Text text="Mineral Type" ></Text>
+					</Column>
+				</columns>
+				<ColumnListItem >
+				<cells>
+					<Text text="{MiningModel>contractor_id}"></Text>
+					<Input value="{MiningModel>name}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
+					<Text text="{MiningModel>contact}"></Text>
+					<Text text="{MiningModel>type_of_mineral}"></Text>
+				</cells>
+				</ColumnListItem>
+			</Table>
+			</IconTabFilter>
+			</items>
+			</IconTabBar>
+         </content>
+    </Page>
+</mvc:View>
