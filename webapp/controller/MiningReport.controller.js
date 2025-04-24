@@ -19,8 +19,8 @@ sap.ui.define([
                 this.bDescending=false;
             }
             
-            var oSorter=new Sorter("Type of mineral", this.bDescending);
-            var oList=this.getView().byId("idListCtrl1");
+            var oSorter=new Sorter("Mineral Type", this.bDescending);
+            var oList=this.getView().byId("idListCtrl");
             var oBinding=oList.getBinding("items");
             oBinding.sort(oSorter);
                 this.bDescending=!this.bDescending;
